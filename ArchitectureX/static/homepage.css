@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.wallpart{
+    width: 100%;
+    height: 100vh;
+}
+.mainbackground{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(0.3);
+}
+.explanation{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.aac{
+    margin-top: 40px;
+}
+.explanation .aac a{
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 50px;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.explanation .aac a:hover{
+    color: white;
+    background-color: black;
+}
+.headermain{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: black;
+}
+.explanation p{
+    padding-top: 40px;
+    color: white;
+    font-size: 1.1rem;
+    width: 500px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+}
+.newpart{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    width: auto;
+    padding-top: 75px;
+    height: 400px;
+    color: #D54848;
+}
+.description p{
+    font-size: 1.4rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.crewlittle{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.photo1, .photo2{
+    width: 25vw;
+    height: 250px;
+    box-shadow: -7px -7px grey;
+
+}
+.photo1 img, .photo2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.crewlittle span{
+    width: 30vw;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(202, 182, 182);
+    text-align: center;
+    box-shadow: 10px 10px black;
+    line-height: 25px;
+}
+.projectslittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+}
+.photos{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+}
+
+
+.photosin{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    transition: 0.8s;
+}
+.photosin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.buttonsnext{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+}
+.buttonsnext i{
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.buttonsnext i:hover{
+color: white;
+}
+.projectlink{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: black;
+    margin-top: 80px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+.projectlink:hover{
+    background-color: grey;
+    color: black;
+}
+@media screen and (max-width:730px){
+    .crewlittle{
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .photo1, .photo2{
+        width: 50vw;
+    }
+    .crewlittle span{
+        width: 50vw;
+        height: 250px;
+    }
+}
+@media screen and (max-width:576px){
+    .headermain{
+        font-size: 2rem;
+    }
+    .explanation{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .explanation p{
+        text-align: center;
+        width: 100vw;
+    }
+    .explanation .aac a{
+        margin-right: 10px;
+    }
+    .crewlittle{
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .photo1, .photo2{
+        width: 80vw;
+    }
+    .crewlittle span{
+        width: 80vw;
+        height: 250px;
+    }
+    .description p{
+        font-size: 1.4rem;
+        font-family: 'Merriweather Sans', sans-serif;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 100vw;
+    }
+    .photos{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .buttonsnext{
+        width: 100vw;
+    }
+    .photosin img{
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+}

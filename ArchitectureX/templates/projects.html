@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchitectX| Projects</title>
+    <link rel="stylesheet" href="/static/projects.css">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'homepage.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "/includes/navbar.html" %}
+    <div class="allprojects">
+        <div class="projects">
+            <img src="https://images.adsttc.com/media/images/5b86/ba2d/f197/ccda/a100/0116/newsletter/776_3_HR_ZeitzMOCAA_HeatherwickStudio_Credit_Iwan_Baan_View_of_Zeitz_MOCAA_in_Silo_Square.jpg?1535556132">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://static.dezeen.com/uploads/2020/06/aalto-university-vdf-school-shows_dezeen_1704_hero-852x480.jpg">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://www.azuremagazine.com/wp-content/uploads/2015/01/Azure-future-architecture-23.jpg">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://images.adsttc.com/media/images/5de9/3010/3312/fd9f/fd00/04a7/newsletter/Lv_Lin.jpg?1575563274">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://images.adsttc.com/media/images/5de9/12ef/3312/fd9f/fd00/0457/newsletter/Dan_Glasser.jpg?1575555816">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://www.azuremagazine.com/wp-content/uploads/2019/02/Architecture-Projects-that-Will-Shape-Torontos-Future-Azure-Hero-800x600.jpg">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://thumbs-prod.si-cdn.com/M_3lpaxvknxDMW-8Vm6KaGVOaXo=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/ea/e9/eae98c73-20b5-4736-8d76-3cc7a7cd3ab3/file-20180104-26157-pv6mnt.jpg">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+        <div class="projects">
+            <img src="https://www.azuremagazine.com/wp-content/uploads/2012/12/Top-Architecture-2012-01.jpg">
+            <span class="exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi?</span>
+        </div>
+    </div>
+    {% block footerblock %}
+    <footer id="footer">
+        <div class="socialmedias">
+            <p>Social media</p> 
+            <div class="sm">
+            <span>
+                <i class="fab fa-instagram fa-2x"></i>
+            </span>
+            <span>
+                <i class="fab fa-twitter fa-2x"></i>
+                
+            </span>
+            <span>
+                <i class="fab fa-facebook fa-2x"></i>
+                
+            </span>
+            </div>
+        </div>
+        <div class="communication">
+            <div class="phonenumber">
+                <p>Phone number&Whatsapp</p>
+                <div class="pnwp">
+                <span><i class="fab fa-whatsapp fa-2x"></i></span>
+                <span class="pn">+9023112311</span>
+                </div>
+            </div>
+            <div class="email">
+                <p>E-mail</p>
+                <div class="pnwp">
+                <span><i class="fas fa-envelope-square fa-2x"></i></span>
+                <span class="pn">example@gmail.com</span>
+                </div>
+            </div>
+            <div class="address">
+                <p>Office address</p>
+                <div class="pnwp">
+                <span><i class="fas fa-laptop-house fa-2x"></i></span>
+                <span class="pn">Example</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchitectX| Main page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'homepage.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    {% include "/includes/navbar.html" %}
+    <section class="wallpart">
+        <video class="mainbackground" autoplay loop muted>
+            <source src="/static/photos/wallpapervideo.mp4">
+        </video>
+        <div class="explanation">
+            <span class="headermain">Simple, attractive <br> and dynamic.</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quasi esse quos similique placeat saepe maiores quibusdam aspernatur commodi sapiente!</p>
+            <div class="aac">
+                <a href="#header">About Us</a>
+                <a href="#footer">Communication</a>
+            </div>
+        </div>
+    </section>
+    <section class="newpart">
+        <span class="header" id="header">About Us</span>
+        <div class="description">
+            <p>Who We Are, What We Are Doing?</p>
+            <div class="crewlittle">
+                <div class="photo1"><img src="https://www.res.com.au/architecture/category-banner-images/people18Resource-Architecture-Team.jpg"></div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facilis tempora non totam ex nisi quisquam ducimus iste explicabo assumenda veritatis ipsa rem pariatur vel, animi voluptates fugiat? Accusantium adipisci minima incidunt consequatur illum sed eos omnis est neque quae?</span>
+                <div class="photo2"><img src="https://www.pointtopoint.com/hubfs/social-suggested-images/product-specification-dream-team-2.jpg"></div>
+            </div>
+            <div class="projectslittle">
+                <p>Some Our Projects</p>
+                <div class="photos">
+                    <div class="photosin">
+                        <img src="https://images.adsttc.com/media/images/5de9/3010/3312/fd9f/fd00/04a7/newsletter/Lv_Lin.jpg?1575563274">
+                        <img src="https://images.adsttc.com/media/images/5de9/12ef/3312/fd9f/fd00/0457/newsletter/Dan_Glasser.jpg?1575555816">
+                        <img src="https://www.azuremagazine.com/wp-content/uploads/2019/02/Architecture-Projects-that-Will-Shape-Torontos-Future-Azure-Hero-800x600.jpg">
+                        <img src="https://cdn.wallpaper.com/main/legacy/article/7855/1408550041_00_Letter-from-Netherlands-P.jpg">
+                    </div>
+                    <div class="buttonsnext">
+                        <i class="fas fa-chevron-left fa-2x" id="previous"></i>
+                        <i class="fas fa-chevron-right fa-2x" id="next"></i>
+                    </div>
+                </div>
+                <a href="/projects" class="projectlink">Our All Projects</a>
+            </div>
+        </div>
+    </section>
+    {% block footerblock %}
+    <footer id="footer">
+        <div class="socialmedias">
+            <p>Social media</p> 
+            <div class="sm">
+            <span>
+                <i class="fab fa-instagram fa-2x"></i>
+            </span>
+            <span>
+                <i class="fab fa-twitter fa-2x"></i>
+                
+            </span>
+            <span>
+                <i class="fab fa-facebook fa-2x"></i>
+                
+            </span>
+            </div>
+        </div>
+        <div class="communication">
+            <div class="phonenumber">
+                <p>Phone number&Whatsapp</p>
+                <div class="pnwp">
+                <span><i class="fab fa-whatsapp fa-2x"></i></span>
+                <span class="pn">+9023112311</span>
+                </div>
+            </div>
+            <div class="email">
+                <p>E-mail</p>
+                <div class="pnwp">
+                <span><i class="fas fa-envelope-square fa-2x"></i></span>
+                <span class="pn">example@gmail.com</span>
+                </div>
+            </div>
+            <div class="address">
+                <p>Office address</p>
+                <div class="pnwp">
+                <span><i class="fas fa-laptop-house fa-2x"></i></span>
+                <span class="pn">Example</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+    <script src="/static/homepage.js"></script>
+</body>
+</html>
